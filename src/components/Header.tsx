@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,20 +11,20 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-pilotin-purple to-pilotin-purple-light rounded-lg flex items-center justify-center">
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">P</span>
             </div>
             <span className="text-xl font-bold text-gray-900">Pilotin</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-600 hover:text-pilotin-purple transition-colors">Home</a>
-            <a href="/pessoas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Pessoas</a>
-            <a href="/empresas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Empresas</a>
-            <a href="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors">Sobre</a>
-            <a href="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors">Contato</a>
+            <Link to="/" className="text-gray-600 hover:text-pilotin-purple transition-colors">Home</Link>
+            <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Pessoas</Link>
+            <Link to="/empresas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Empresas</Link>
+            <Link to="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors">Sobre</Link>
+            <Link to="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors">Contato</Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -53,11 +54,11 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col space-y-4">
-              <a href="/" className="text-gray-600 hover:text-pilotin-purple transition-colors">Home</a>
-              <a href="/pessoas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Pessoas</a>
-              <a href="/empresas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Empresas</a>
-              <a href="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors">Sobre</a>
-              <a href="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors">Contato</a>
+              <Link to="/" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Para Pessoas</Link>
+              <Link to="/empresas" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Para Empresas</Link>
+              <Link to="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Sobre</Link>
+              <Link to="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Contato</Link>
               <div className="flex flex-col space-y-2 pt-2">
                 <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple">
                   Sou empresa

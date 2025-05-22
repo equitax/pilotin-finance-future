@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-pilotin-purple to-pilotin-purple-light rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">P</span>
               </div>
               <span className="text-xl font-bold">Pilotin</span>
@@ -35,8 +36,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Soluções</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/pessoas" className="hover:text-white transition-colors">Para Pessoas</a></li>
-              <li><a href="/empresas" className="hover:text-white transition-colors">Para Empresas</a></li>
+              <li><Link to="/pessoas" className="hover:text-white transition-colors">Para Pessoas</Link></li>
+              <li><Link to="/empresas" className="hover:text-white transition-colors">Para Empresas</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">API</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Documentação</a></li>
             </ul>
@@ -46,8 +47,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Empresa</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/sobre" className="hover:text-white transition-colors">Sobre nós</a></li>
-              <li><a href="/contato" className="hover:text-white transition-colors">Contato</a></li>
+              <li><Link to="/sobre" className="hover:text-white transition-colors">Sobre nós</Link></li>
+              <li><Link to="/contato" className="hover:text-white transition-colors">Contato</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Política de Privacidade</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Termos de Uso</a></li>
             </ul>
