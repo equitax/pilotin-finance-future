@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-pilotin-blue to-pilotin-green rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">P</span>
             </div>
             <span className="text-xl font-bold text-gray-900">Pilotin</span>
@@ -20,19 +20,19 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-600 hover:text-pilotin-purple transition-colors">Home</Link>
-            <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Pessoas</Link>
-            <Link to="/empresas" className="text-gray-600 hover:text-pilotin-purple transition-colors">Para Empresas</Link>
-            <Link to="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors">Sobre</Link>
-            <Link to="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors">Contato</Link>
+            <Link to="/" className="text-gray-600 hover:text-pilotin-blue transition-colors">Home</Link>
+            <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-blue transition-colors">Para Pessoas</Link>
+            <Link to="/empresas" className="text-gray-600 hover:text-pilotin-blue transition-colors">Para Empresas</Link>
+            <Link to="/sobre" className="text-gray-600 hover:text-pilotin-blue transition-colors">Sobre</Link>
+            <Link to="/contato" className="text-gray-600 hover:text-pilotin-blue transition-colors">Contato</Link>
           </nav>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white">
+            <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue hover:bg-pilotin-blue hover:text-white">
               Sou empresa
             </Button>
-            <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark">
+            <Button size="sm" className="bg-pilotin-green hover:bg-pilotin-green-dark text-white">
               Quero pilotar minhas finanças
             </Button>
           </div>
@@ -54,16 +54,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col space-y-4">
-              <Link to="/" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Para Pessoas</Link>
-              <Link to="/empresas" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Para Empresas</Link>
-              <Link to="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Sobre</Link>
-              <Link to="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors" onClick={() => setIsMenuOpen(false)}>Contato</Link>
+              <Link to="/" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Para Pessoas</Link>
+              <Link to="/empresas" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Para Empresas</Link>
+              <Link to="/sobre" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Sobre</Link>
+              <Link to="/contato" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Contato</Link>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple">
+                <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue">
                   Sou empresa
                 </Button>
-                <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark">
+                <Button size="sm" className="bg-pilotin-green hover:bg-pilotin-green-dark text-white">
                   Quero pilotar minhas finanças
                 </Button>
               </div>
