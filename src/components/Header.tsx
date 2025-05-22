@@ -77,10 +77,10 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue hover:bg-pilotin-blue hover:text-white">
+            <Button variant="outline" size="sm">
               Sou empresa
             </Button>
-            <Button size="sm" className="bg-pilotin-green hover:bg-pilotin-green-dark text-white">
+            <Button variant="green" size="sm">
               Quero pilotar minhas finanças
             </Button>
           </div>
@@ -158,10 +158,10 @@ const Header = () => {
                 Contato
               </Link>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue hover:bg-pilotin-blue hover:text-white">
+                <Button variant="outline" size="sm">
                   Sou empresa
                 </Button>
-                <Button size="sm" className="bg-pilotin-green hover:bg-pilotin-green-dark text-white">
+                <Button variant="green" size="sm">
                   Quero pilotar minhas finanças
                 </Button>
               </div>

@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Briefcase, Lock, PieChart, Building, Zap } from 'lucide-react';
+import { Lock, PieChart, Building, Zap } from 'lucide-react';
 
 const Pessoas = () => {
   return (
@@ -22,7 +22,7 @@ const Pessoas = () => {
               Transforme sua relação com o dinheiro. Conecte suas contas, entenda seus hábitos 
               e receba insights personalizados para alcançar seus objetivos financeiros.
             </p>
-            <Button size="lg" className="bg-pilotin-green hover:bg-pilotin-green-dark text-white text-lg px-8 py-4">
+            <Button variant="green" size="lg" className="text-lg px-8 py-4">
               Comece agora. É gratuito!
             </Button>
           </div>
@@ -161,7 +161,7 @@ const Pessoas = () => {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Junte-se a milhares de pessoas que já estão no controle das suas finanças
           </p>
-          <Button size="lg" variant="secondary" className="bg-white text-pilotin-blue hover:bg-gray-100 text-lg px-8 py-4 font-medium">
+          <Button variant="secondary" size="lg" className="bg-white text-pilotin-blue hover:bg-gray-100 text-lg px-8 py-4 font-medium">
             Começar gratuitamente
           </Button>
         </div>
