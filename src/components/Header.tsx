@@ -1,10 +1,13 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
@@ -15,16 +18,61 @@ const Header = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-pilotin-blue to-pilotin-green rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">P</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Pilotin</span>
+            <span className="text-xl font-bold text-gray-900">PilotIn</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-600 hover:text-pilotin-blue transition-colors">Home</Link>
-            <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-blue transition-colors">Para Pessoas</Link>
-            <Link to="/empresas" className="text-gray-600 hover:text-pilotin-blue transition-colors">Para Empresas</Link>
-            <Link to="/sobre" className="text-gray-600 hover:text-pilotin-blue transition-colors">Sobre</Link>
-            <Link to="/contato" className="text-gray-600 hover:text-pilotin-blue transition-colors">Contato</Link>
+            <Link 
+              to="/" 
+              className={`transition-colors ${
+                isActive('/') 
+                  ? 'text-pilotin-green font-medium border-b-2 border-pilotin-green' 
+                  : 'text-gray-600 hover:text-pilotin-blue'
+              }`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/pessoas" 
+              className={`transition-colors ${
+                isActive('/pessoas') 
+                  ? 'text-pilotin-green font-medium border-b-2 border-pilotin-green' 
+                  : 'text-gray-600 hover:text-pilotin-blue'
+              }`}
+            >
+              Para Pessoas
+            </Link>
+            <Link 
+              to="/empresas" 
+              className={`transition-colors ${
+                isActive('/empresas') 
+                  ? 'text-pilotin-green font-medium border-b-2 border-pilotin-green' 
+                  : 'text-gray-600 hover:text-pilotin-blue'
+              }`}
+            >
+              Para Empresas
+            </Link>
+            <Link 
+              to="/sobre" 
+              className={`transition-colors ${
+                isActive('/sobre') 
+                  ? 'text-pilotin-green font-medium border-b-2 border-pilotin-green' 
+                  : 'text-gray-600 hover:text-pilotin-blue'
+              }`}
+            >
+              Sobre
+            </Link>
+            <Link 
+              to="/contato" 
+              className={`transition-colors ${
+                isActive('/contato') 
+                  ? 'text-pilotin-green font-medium border-b-2 border-pilotin-green' 
+                  : 'text-gray-600 hover:text-pilotin-blue'
+              }`}
+            >
+              Contato
+            </Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -54,13 +102,63 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col space-y-4">
-              <Link to="/" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/pessoas" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Para Pessoas</Link>
-              <Link to="/empresas" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Para Empresas</Link>
-              <Link to="/sobre" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Sobre</Link>
-              <Link to="/contato" className="text-gray-600 hover:text-pilotin-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Contato</Link>
+              <Link 
+                to="/" 
+                className={`transition-colors ${
+                  isActive('/') 
+                    ? 'text-pilotin-green font-medium' 
+                    : 'text-gray-600 hover:text-pilotin-blue'
+                }`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/pessoas" 
+                className={`transition-colors ${
+                  isActive('/pessoas') 
+                    ? 'text-pilotin-green font-medium' 
+                    : 'text-gray-600 hover:text-pilotin-blue'
+                }`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Para Pessoas
+              </Link>
+              <Link 
+                to="/empresas" 
+                className={`transition-colors ${
+                  isActive('/empresas') 
+                    ? 'text-pilotin-green font-medium' 
+                    : 'text-gray-600 hover:text-pilotin-blue'
+                }`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Para Empresas
+              </Link>
+              <Link 
+                to="/sobre" 
+                className={`transition-colors ${
+                  isActive('/sobre') 
+                    ? 'text-pilotin-green font-medium' 
+                    : 'text-gray-600 hover:text-pilotin-blue'
+                }`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sobre
+              </Link>
+              <Link 
+                to="/contato" 
+                className={`transition-colors ${
+                  isActive('/contato') 
+                    ? 'text-pilotin-green font-medium' 
+                    : 'text-gray-600 hover:text-pilotin-blue'
+                }`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contato
+              </Link>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue">
+                <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue hover:bg-pilotin-blue hover:text-white">
                   Sou empresa
                 </Button>
                 <Button size="sm" className="bg-pilotin-green hover:bg-pilotin-green-dark text-white">
