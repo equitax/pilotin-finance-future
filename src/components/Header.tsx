@@ -28,11 +28,15 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white">
-              Sou empresa
+            <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white" asChild>
+              <a href="https://business.pilotin.com.br/" target="_blank" rel="noopener noreferrer">
+                Sou empresa
+              </a>
             </Button>
-            <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark">
-              Quero pilotar minhas finanças
+            <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark" asChild>
+              <a href="https://my.pilotin.app/cadastro" target="_blank" rel="noopener noreferrer">
+                Quero pilotar minhas finanças
+              </a>
             </Button>
           </div>
 
@@ -59,11 +63,15 @@ const Header = () => {
               <a href="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors">Sobre</a>
               <a href="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors">Contato</a>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple">
-                  Sou empresa
+                <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple" asChild>
+                  <a href="https://business.pilotin.com.br/" target="_blank" rel="noopener noreferrer">
+                    Sou empresa
+                  </a>
                 </Button>
-                <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark">
-                  Quero pilotar minhas finanças
+                <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark" asChild>
+                  <a href="https://my.pilotin.app/cadastro" target="_blank" rel="noopener noreferrer">
+                    Quero pilotar minhas finanças
+                  </a>
                 </Button>
               </div>
             </nav>

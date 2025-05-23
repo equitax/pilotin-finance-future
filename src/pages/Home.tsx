@@ -23,11 +23,15 @@ const Home = () => {
                 Conectamos seus dados do Open Finance para transformar sua relação com dinheiro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-pilotin-purple hover:bg-pilotin-purple-dark text-lg px-8 py-4">
-                  Quero pilotar minhas finanças
+                <Button size="lg" className="bg-pilotin-purple hover:bg-pilotin-purple-dark text-lg px-8 py-4" asChild>
+                  <a href="https://my.pilotin.app/cadastro" target="_blank" rel="noopener noreferrer">
+                    Quero pilotar minhas finanças
+                  </a>
                 </Button>
-                <Button variant="outline" size="lg" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white text-lg px-8 py-4">
-                  Sou empresa
+                <Button variant="outline" size="lg" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white text-lg px-8 py-4" asChild>
+                  <a href="https://business.pilotin.com.br/" target="_blank" rel="noopener noreferrer">
+                    Sou empresa
+                  </a>
                 </Button>
               </div>
             </div>
@@ -98,7 +102,7 @@ const Home = () => {
                 </div>
               </div>
               <Button className="w-full bg-pilotin-purple hover:bg-pilotin-purple-dark" asChild>
-                <a href="/pessoas">Começar agora</a>
+                <a href="https://my.pilotin.app/cadastro" target="_blank" rel="noopener noreferrer">Começar agora</a>
               </Button>
             </Card>
 
@@ -129,7 +133,7 @@ const Home = () => {
                 </div>
               </div>
               <Button variant="outline" className="w-full border-pilotin-blue text-pilotin-blue hover:bg-pilotin-blue hover:text-white" asChild>
-                <a href="/empresas">Falar com especialista</a>
+                <a href="https://business.pilotin.com.br/" target="_blank" rel="noopener noreferrer">Falar com especialista</a>
               </Button>
             </Card>
           </div>
