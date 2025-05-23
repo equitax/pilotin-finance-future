@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-pilotin-blue to-pilotin-green rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
               <img 
                 src="/lovable-uploads/01aedc99-a482-49d0-b9a5-ec64c080c4e2.png" 
                 alt="PilotIn Logo" 
@@ -81,10 +81,10 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue">
               Sou empresa
             </Button>
-            <Button variant="green" size="sm">
+            <Button variant="green" size="sm" className="bg-pilotin-green text-white">
               Quero pilotar minhas finanças
             </Button>
           </div>
@@ -162,10 +162,10 @@ const Header = () => {
                 Contato
               </Link>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue">
                   Sou empresa
                 </Button>
-                <Button variant="green" size="sm">
+                <Button variant="green" size="sm" className="bg-pilotin-green text-white">
                   Quero pilotar minhas finanças
                 </Button>
               </div>

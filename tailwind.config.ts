@@ -76,6 +76,10 @@ export default {
 					gray: '#64748B',
 					'gray-light': '#F1F5F9',
 					'gray-dark': '#334155',
+					purple: '#6C2BD9',
+					'purple-dark': '#5921B5',
+					'purple-light': '#8E55E4',
+					orange: '#FF9500',
 				}
 			},
 			borderRadius: {
