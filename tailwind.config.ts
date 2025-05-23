@@ -29,7 +29,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#0A1F44', // PilotIn's dark blue
+					DEFAULT: '#6C3AEE',
 					foreground: '#FFFFFF'
 				},
 				secondary: {
@@ -67,19 +67,15 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				pilotin: {
-					green: '#00D084', // PilotIn's green
-					'green-light': '#4DDBA4', // Lighter shade of PilotIn's green
-					'green-dark': '#00A868', // Darker shade of PilotIn's green
-					blue: '#0A1F44', // PilotIn's dark blue
-					'blue-light': '#304870', // Lighter shade of PilotIn's blue
-					'blue-dark': '#061835', // Darker shade of PilotIn's blue
+					purple: '#6C3AEE',
+					'purple-light': '#8B5CF6',
+					'purple-dark': '#5B2BD6',
 					gray: '#64748B',
 					'gray-light': '#F1F5F9',
 					'gray-dark': '#334155',
-					purple: '#6C2BD9',
-					'purple-dark': '#5921B5',
-					'purple-light': '#8E55E4',
-					orange: '#FF9500',
+					blue: '#3B82F6',
+					green: '#10B981',
+					orange: '#F59E0B'
 				}
 			},
 			borderRadius: {

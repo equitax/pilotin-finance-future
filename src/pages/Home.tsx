@@ -1,9 +1,8 @@
 
-import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -11,314 +10,170 @@ const Home = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 overflow-hidden">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight animate-fade-in">
-                Sua vida financeira, mais leve, mais 
-                <span className="text-pilotin-purple"> inteligente</span>
+            <div className="animate-fade-in">
+              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Sua vida financeira, 
+                <span className="text-pilotin-purple"> mais leve</span>, 
+                <span className="text-pilotin-purple"> mais inteligente</span>.
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Conectamos seus dados do Open Finance para transformar sua relação com dinheiro.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-pilotin-purple hover:bg-pilotin-purple-dark text-white px-8">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-pilotin-purple hover:bg-pilotin-purple-dark text-lg px-8 py-4">
                   Quero pilotar minhas finanças
                 </Button>
-                <Button variant="outline" size="lg" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white px-8">
+                <Button variant="outline" size="lg" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white text-lg px-8 py-4">
                   Sou empresa
                 </Button>
               </div>
             </div>
-            <div className="relative">
-              <div className="w-full h-[460px] relative">
-                {/* Abstract purple gradient background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-pilotin-purple/30 to-pilotin-blue/20 rounded-2xl transform rotate-3 animate-float"></div>
-                
-                {/* Dashboard mockup */}
-                <div className="absolute inset-0 bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-6 transform -rotate-2">
-                  <div className="border-b pb-4 mb-4">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-6 h-6 bg-pilotin-purple rounded-md"></div>
-                      <h3 className="font-bold text-lg text-gray-900">Dashboard Financeiro</h3>
+            
+            <div className="relative animate-float">
+              <div className="bg-gradient-to-br from-pilotin-purple to-pilotin-blue rounded-3xl p-8 shadow-2xl">
+                <div className="bg-white rounded-2xl p-6 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-10 h-10 bg-pilotin-purple rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold">P</span>
+                      </div>
+                      <span className="font-semibold text-gray-900">Pilotin App</span>
                     </div>
+                    <div className="text-pilotin-green text-sm font-medium">Online</div>
                   </div>
-                  <div className="space-y-4">
-                    <div className="flex justify-between">
-                      <div>
-                        <p className="text-sm text-gray-500">Saldo Total</p>
-                        <p className="text-xl font-bold text-gray-900">R$ 7.842,50</p>
-                      </div>
-                      <div className="flex items-center text-pilotin-green">
-                        <span className="text-lg font-bold">+2.4%</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clipRule="evenodd" />
-                        </svg>
-                      </div>
+                  <div className="space-y-3">
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="text-sm text-gray-600">Suas contas conectadas</div>
+                      <div className="text-lg font-semibold text-gray-900">5 bancos</div>
                     </div>
-                    <div className="bg-gray-100 rounded-lg p-4">
-                      <div className="flex justify-between items-center mb-2">
-                        <p className="font-medium">Gastos por Categoria</p>
-                        <p className="text-sm text-gray-500">Maio 2024</p>
-                      </div>
-                      <div className="space-y-3">
-                        <div className="flex items-center">
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <div className="bg-pilotin-purple h-2 rounded-full" style={{width: '65%'}}></div>
-                          </div>
-                          <span className="ml-2 text-sm">65%</span>
-                        </div>
-                        <div className="flex items-center">
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <div className="bg-pilotin-blue h-2 rounded-full" style={{width: '40%'}}></div>
-                          </div>
-                          <span className="ml-2 text-sm">40%</span>
-                        </div>
-                        <div className="flex items-center">
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <div className="bg-pilotin-green h-2 rounded-full" style={{width: '25%'}}></div>
-                          </div>
-                          <span className="ml-2 text-sm">25%</span>
-                        </div>
-                      </div>
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="text-sm text-gray-600">Score de saúde financeira</div>
+                      <div className="text-lg font-semibold text-pilotin-green">Excelente</div>
                     </div>
-                    <div className="bg-pilotin-purple text-white p-4 rounded-lg">
-                      <div className="flex items-start">
-                        <div className="p-2 bg-white/20 rounded-lg mr-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="font-medium">Dica para você</p>
-                          <p className="text-sm opacity-90">Você economizou 15% mais este mês comparado a Abril. Continue assim!</p>
-                        </div>
-                      </div>
+                    <div className="bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-lg p-3 text-white">
+                      <div className="text-sm opacity-90">Próxima dica</div>
+                      <div className="text-sm font-medium">Você pode economizar R$ 280 este mês</div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-pilotin-orange rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-pilotin-green rounded-full opacity-20 animate-pulse"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solutions Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Cards Section */}
+      <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Soluções para todos os perfis
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Tecnologia e dados do Open Finance para pessoas e empresas
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* For Individuals */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50 group">
               <div className="mb-6">
-                <div className="w-16 h-16 bg-pilotin-purple/10 rounded-xl flex items-center justify-center group-hover:bg-pilotin-purple/20 transition-all duration-300">
-                  <svg className="w-8 h-8 text-pilotin-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Para Pessoas</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Controle seu dinheiro, organize sua vida financeira e alcance seus objetivos com inteligência artificial.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Para Pessoas</h3>
-              <p className="text-gray-600 mb-8">
-                Controle seu dinheiro, organize sua vida financeira e alcance seus objetivos com insights personalizados.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <svg className="w-6 h-6 text-pilotin-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">Visão geral de todos seus bancos e cartões</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-pilotin-green rounded-full"></div>
+                  <span className="text-gray-700">Conecte todas suas contas em um só lugar</span>
                 </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <svg className="w-6 h-6 text-pilotin-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">Categorização automática de gastos</p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-pilotin-green rounded-full"></div>
+                  <span className="text-gray-700">Análises inteligentes do seu comportamento financeiro</span>
                 </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <svg className="w-6 h-6 text-pilotin-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">Dicas financeiras personalizadas</p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-pilotin-green rounded-full"></div>
+                  <span className="text-gray-700">Dicas personalizadas para economizar</span>
                 </div>
               </div>
-              <Link to="/pessoas">
-                <Button className="w-full bg-pilotin-purple hover:bg-pilotin-purple-dark">
-                  Saiba mais
-                </Button>
-              </Link>
-            </div>
+              <Button className="w-full bg-pilotin-purple hover:bg-pilotin-purple-dark" asChild>
+                <a href="/pessoas">Começar agora</a>
+              </Button>
+            </Card>
 
-            {/* For Companies */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50 group">
               <div className="mb-6">
-                <div className="w-16 h-16 bg-pilotin-blue/10 rounded-xl flex items-center justify-center group-hover:bg-pilotin-blue/20 transition-all duration-300">
-                  <svg className="w-8 h-8 text-pilotin-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-gradient-to-r from-pilotin-blue to-pilotin-green rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Para Empresas</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Soluções inteligentes para análise, concessão, monitoramento e recuperação de crédito baseadas em Open Finance.
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Para Empresas</h3>
-              <p className="text-gray-600 mb-8">
-                Soluções inteligentes para análise, concessão, monitoramento e recuperação de crédito com Open Finance.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <svg className="w-6 h-6 text-pilotin-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">Validação avançada de dados cadastrais</p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-pilotin-blue rounded-full"></div>
+                  <span className="text-gray-700">Análise antifraude robusta</span>
                 </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <svg className="w-6 h-6 text-pilotin-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">Fluxo de caixa histórico e preditivo</p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-pilotin-blue rounded-full"></div>
+                  <span className="text-gray-700">Decisões de crédito mais assertivas</span>
                 </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <svg className="w-6 h-6 text-pilotin-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">Monitoramento contínuo e alertas</p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-pilotin-blue rounded-full"></div>
+                  <span className="text-gray-700">Monitoramento e recuperação inteligente</span>
                 </div>
               </div>
-              <Link to="/empresas">
-                <Button variant="outline" className="w-full border-pilotin-blue text-pilotin-blue hover:bg-pilotin-blue hover:text-white">
-                  Saiba mais
-                </Button>
-              </Link>
-            </div>
+              <Button variant="outline" className="w-full border-pilotin-blue text-pilotin-blue hover:bg-pilotin-blue hover:text-white" asChild>
+                <a href="/empresas">Falar com especialista</a>
+              </Button>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              O que estão dizendo sobre nós
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Milhares de usuários já estão transformando sua vida financeira com a Pilotin
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-              <div className="flex items-center mb-4">
-                <div className="mr-4">
-                  <div className="w-12 h-12 bg-pilotin-purple/20 rounded-full flex items-center justify-center">
-                    <span className="text-pilotin-purple font-semibold">MC</span>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Maria Costa</h4>
-                  <p className="text-sm text-gray-500">Usuária desde 2023</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                "A Pilotin ajudou muito a organizar minhas finanças. Consigo ver tudo em um só lugar e as dicas são realmente úteis!"
-              </p>
-              <div className="flex mt-4 text-pilotin-orange">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-              <div className="flex items-center mb-4">
-                <div className="mr-4">
-                  <div className="w-12 h-12 bg-pilotin-blue/20 rounded-full flex items-center justify-center">
-                    <span className="text-pilotin-blue font-semibold">RS</span>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Rafael Silva</h4>
-                  <p className="text-sm text-gray-500">Empresário</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                "Nossa empresa melhorou muito a taxa de aprovação de crédito desde que começamos a usar a Pilotin. Os dados são muito precisos."
-              </p>
-              <div className="flex mt-4 text-pilotin-orange">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-              <div className="flex items-center mb-4">
-                <div className="mr-4">
-                  <div className="w-12 h-12 bg-pilotin-green/20 rounded-full flex items-center justify-center">
-                    <span className="text-pilotin-green font-semibold">JO</span>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Julia Oliveira</h4>
-                  <p className="text-sm text-gray-500">Analista Financeira</p>
-                </div>
-              </div>
-              <p className="text-gray-600 italic">
-                "A integração com Open Finance é perfeita! Nunca foi tão fácil entender o comportamento financeiro dos clientes."
-              </p>
-              <div className="flex mt-4 text-pilotin-orange">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-pilotin-purple to-pilotin-blue text-white">
+      {/* Trust Section */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Pronto para transformar sua vida financeira?
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Confiança e Segurança em primeiro lugar
           </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Junte-se a milhares de pessoas que já estão no controle das suas finanças
+          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+            Utilizamos os mais altos padrões de segurança do Open Finance, 
+            regulamentados pelo Banco Central do Brasil.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="secondary" className="bg-white text-pilotin-purple hover:bg-gray-100 text-lg px-8">
-              Começar gratuitamente
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8">
-              Fale com nosso time
-            </Button>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <div className="w-12 h-12 bg-pilotin-green rounded-lg flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Dados Criptografados</h3>
+              <p className="text-gray-600 text-sm">Seus dados são protegidos com criptografia de ponta a ponta</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <div className="w-12 h-12 bg-pilotin-blue rounded-lg flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Regulamentado</h3>
+              <p className="text-gray-600 text-sm">Seguimos todas as regulamentações do Banco Central</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <div className="w-12 h-12 bg-pilotin-purple rounded-lg flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Transparência Total</h3>
+              <p className="text-gray-600 text-sm">Você tem controle total sobre seus dados</p>
+            </div>
           </div>
         </div>
       </section>
