@@ -54,7 +54,7 @@ const Empresas = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">✅ Análise e Antifraude</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Análise e Antifraude</h3>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -83,7 +83,7 @@ const Empresas = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">✅ Concessão de Crédito</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Concessão de Crédito</h3>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -113,7 +113,7 @@ const Empresas = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">✅ Monitoramento</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Monitoramento</h3>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -142,7 +142,7 @@ const Empresas = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">✅ Cobrança e Recuperação</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Cobrança e Recuperação</h3>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -183,7 +183,7 @@ const Empresas = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🔐 Camada antifraude robusta</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Camada antifraude robusta</h3>
               <p className="text-gray-600">
                 Reduza perdas com fraude em até 90% com nossa tecnologia de análise comportamental
               </p>
@@ -195,7 +195,7 @@ const Empresas = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">💡 Melhora a experiência do cliente</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Melhora a experiência do cliente</h3>
               <p className="text-gray-600">
                 Jornada mais fluida e rápida, com aprovações em tempo real e menos fricção
               </p>
@@ -207,7 +207,7 @@ const Empresas = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🚀 Aumenta eficiência operacional</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Aumenta eficiência operacional</h3>
               <p className="text-gray-600">
                 Automação inteligente que reduz custos operacionais e aumenta a recuperação de crédito
               </p>

@@ -10,11 +10,13 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-pilotin-purple to-pilotin-purple-light rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">P</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">Pilotin</span>
+          <a href="/" className="flex items-center space-x-3">
+            <img
+                src="/logo-1.png"  
+                alt="Logo PilotIn"
+                className="h-8 w-auto"              
+            />
+            <span className="text-3xl font-bold text-gray-900">PilotIn</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -28,12 +30,16 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white">
-              Sou empresa
+            <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue-dark hover:bg-pilotin-blue-dark hover:text-white" asChild>
+               <a href="https://business.pilotin.com.br/" target="_blank" rel="noopener noreferrer">
+                    Sou empresa
+               </a>
             </Button>
-            <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark">
-              Quero pilotar minhas finanças
-            </Button>
+            <Button size="sm" className="bg-pilotin-green hover:bg-pilotin-green-light" asChild>
+              <a href="https://my.pilotin.app/cadastro" target="_blank" rel="noopener noreferrer">
+                  Quero pilotar minhas finanças
+              </a>
+             </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -59,11 +65,15 @@ const Header = () => {
               <a href="/sobre" className="text-gray-600 hover:text-pilotin-purple transition-colors">Sobre</a>
               <a href="/contato" className="text-gray-600 hover:text-pilotin-purple transition-colors">Contato</a>
               <div className="flex flex-col space-y-2 pt-2">
-                <Button variant="outline" size="sm" className="border-pilotin-purple text-pilotin-purple">
-                  Sou empresa
+                <Button variant="outline" size="sm" className="border-pilotin-blue text-pilotin-blue-dark" asChild>
+                  <a href="https://business.pilotin.com.br/" target="_blank" rel="noopener noreferrer">
+                    Sou empresa
+                  </a>
                 </Button>
-                <Button size="sm" className="bg-pilotin-purple hover:bg-pilotin-purple-dark">
-                  Quero pilotar minhas finanças
+                <Button size="sm" className="bg-pilotin-green hover:bg-pilotin-green-light" asChild>
+                  <a href="https://my.pilotin.app/cadastro" target="_blank" rel="noopener noreferrer">
+                    Quero pilotar minhas finanças
+                  </a>
                 </Button>
               </div>
             </nav>

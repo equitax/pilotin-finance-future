@@ -14,33 +14,37 @@ const Home = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-3xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Sua vida financeira, 
-                <span className="text-pilotin-purple"> mais leve</span>, 
-                <span className="text-pilotin-purple"> mais inteligente</span>.
+                <span className="text-pilotin-green"> mais leve</span>, 
+                <span className="text-pilotin-green"> mais inteligente</span>.
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Conectamos seus dados do Open Finance para transformar sua relação com dinheiro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-pilotin-purple hover:bg-pilotin-purple-dark text-lg px-8 py-4">
+                <Button size="lg" className="bg-pilotin-green hover:bg-pilotin-green-light text-pilotin-white text-lg px-8 py-4" asChild>
+                  <a href="https://my.pilotin.app/cadastro" target="_blank" rel="noopener noreferrer">
                   Quero pilotar minhas finanças
+                  </a>
                 </Button>
-                <Button variant="outline" size="lg" className="border-pilotin-purple text-pilotin-purple hover:bg-pilotin-purple hover:text-white text-lg px-8 py-4">
-                  Sou empresa
+                <Button variant="outline" size="lg" className="bg-pilotin-white text-pilotin-blue-dark hover:bg-pilotin-blue hover:text-white text-lg px-8 py-4" asChild>
+                  <a href="https://business.pilotin.com.br/" target="_blank" rel="noopener noreferrer">
+                    Sou empresa
+                  </a>
                 </Button>
               </div>
             </div>
             
             <div className="relative animate-float">
-              <div className="bg-gradient-to-br from-pilotin-purple to-pilotin-blue rounded-3xl p-8 shadow-2xl">
+              <div className="bg-gradient-to-br from-pilotin-green to-pilotin-blue rounded-3xl p-8 shadow-2xl">
                 <div className="bg-white rounded-2xl p-6 space-y-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-pilotin-purple rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-pilotin-green-light rounded-full flex items-center justify-center">
                         <span className="text-white font-bold">P</span>
                       </div>
-                      <span className="font-semibold text-gray-900">Pilotin App</span>
+                      <span className="font-semibold text-gray-900">PilotIn</span>
                     </div>
                     <div className="text-pilotin-green text-sm font-medium">Online</div>
                   </div>
@@ -50,8 +54,8 @@ const Home = () => {
                       <div className="text-lg font-semibold text-gray-900">5 bancos</div>
                     </div>
                     <div className="bg-gray-50 rounded-lg p-3">
-                      <div className="text-sm text-gray-600">Score de saúde financeira</div>
-                      <div className="text-lg font-semibold text-pilotin-green">Excelente</div>
+                      <div className="text-sm text-gray-600">Fatura de Cartão de Créditos</div>
+                      <div className="text-lg font-semibold text-gray-900">Próximo vencimento 01/05/2025</div>
                     </div>
                     <div className="bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-lg p-3 text-white">
                       <div className="text-sm opacity-90">Próxima dica</div>
@@ -60,8 +64,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-pilotin-orange rounded-full opacity-20 animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-pilotin-green rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-pilotin-orange rounded-full opacity-30 animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-pilotin-green rounded-full opacity-30 animate-pulse"></div>
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <Card className="p-8 hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50 group">
               <div className="mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-r from-pilotin-blue to-pilotin-blue-light rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
@@ -97,7 +101,7 @@ const Home = () => {
                   <span className="text-gray-700">Dicas personalizadas para economizar</span>
                 </div>
               </div>
-              <Button className="w-full bg-pilotin-purple hover:bg-pilotin-purple-dark" asChild>
+              <Button className="w-full bg-pilotin-green hover:bg-pilotin-green-light" asChild>
                 <a href="/pessoas">Começar agora</a>
               </Button>
             </Card>
@@ -148,7 +152,7 @@ const Home = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="w-12 h-12 bg-pilotin-green rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-pilotin-orange rounded-lg flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
@@ -166,7 +170,7 @@ const Home = () => {
               <p className="text-gray-600 text-sm">Seguimos todas as regulamentações do Banco Central</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="w-12 h-12 bg-pilotin-purple rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-pilotin-blue-light rounded-lg flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>

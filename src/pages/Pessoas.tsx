@@ -47,7 +47,7 @@ const Pessoas = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🔒 Privacidade e Segurança</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Privacidade e Segurança</h3>
               <p className="text-gray-600">
                 Seus dados são protegidos com os mais altos padrões de segurança do Open Finance
               </p>
@@ -59,7 +59,7 @@ const Pessoas = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Análises Inteligentes</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Análises Inteligentes</h3>
               <p className="text-gray-600">
                 Entenda para onde vai seu dinheiro com análises automáticas dos seus gastos
               </p>
@@ -71,7 +71,7 @@ const Pessoas = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🏦 Tudo em um lugar</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Tudo em um lugar</h3>
               <p className="text-gray-600">
                 Conecte todos seus bancos, cartões e contas em uma única plataforma
               </p>
@@ -83,7 +83,7 @@ const Pessoas = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🚀 Dicas Personalizadas</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Dicas Personalizadas</h3>
               <p className="text-gray-600">
                 Receba insights e recomendações feitas especialmente para seu perfil financeiro
               </p>
@@ -155,7 +155,7 @@ const Pessoas = () => {
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-pilotin-green to-green-400 rounded-lg p-3 text-white">
-                    <div className="text-xs opacity-90">💡 Dica do dia</div>
+                    <div className="text-xs opacity-90">Dica do dia</div>
                     <div className="text-sm font-medium">Você gastou 15% menos este mês. Continue assim!</div>
                   </div>
                 </div>
