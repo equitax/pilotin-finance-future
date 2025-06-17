@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Header from '@/components/Header';
@@ -37,32 +36,12 @@ const Home = () => {
             </div>
             
             <div className="relative animate-float">
-              <div className="bg-gradient-to-br from-pilotin-green to-pilotin-blue rounded-3xl p-8 shadow-2xl">
-                <div className="bg-white rounded-2xl p-6 space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-pilotin-green-light rounded-full flex items-center justify-center">
-                        <span className="text-white font-bold">P</span>
-                      </div>
-                      <span className="font-semibold text-gray-900">PilotIn</span>
-                    </div>
-                    <div className="text-pilotin-green text-sm font-medium">Online</div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="bg-gray-50 rounded-lg p-3">
-                      <div className="text-sm text-gray-600">Suas contas conectadas</div>
-                      <div className="text-lg font-semibold text-gray-900">5 bancos</div>
-                    </div>
-                    <div className="bg-gray-50 rounded-lg p-3">
-                      <div className="text-sm text-gray-600">Fatura de Cartão de Créditos</div>
-                      <div className="text-lg font-semibold text-gray-900">Próximo vencimento 01/05/2025</div>
-                    </div>
-                    <div className="bg-gradient-to-r from-pilotin-purple to-pilotin-blue rounded-lg p-3 text-white">
-                      <div className="text-sm opacity-90">Próxima dica</div>
-                      <div className="text-sm font-medium">Você pode economizar R$ 280 este mês</div>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/lovable-uploads/7fb88cfd-5962-4979-8899-363d50f47968.png" 
+                  alt="App PilotIn mostrando lançamentos do cartão" 
+                  className="w-full h-auto max-w-sm mx-auto"
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-pilotin-orange rounded-full opacity-30 animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-pilotin-green rounded-full opacity-30 animate-pulse"></div>
